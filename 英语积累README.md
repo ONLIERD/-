@@ -4,4 +4,13 @@
 - varargs	    可变参数;
 - representation  英[ˌreprɪzenˈteɪʃn] 美[ˌreprɪzenˈteɪʃn]   n.表现; 描述; 描绘; 表现形式; 有代理人; 代表; 维护; 支持; 陈述; 抗议;
 - denotes	  英[dɪˈnəʊts] 美[dɪˈnoʊts] v.标志; 预示; 象征; 表示; 意指;
+- abbreviation  英[əˌbriːviˈeɪʃn]  美[əˌbriːviˈeɪʃn]  n.略语; 缩写词; 缩写形式; 缩略; 缩写;
+
+
+
+
+
+
+
+
 - in accordance to  英[ɪn əˈkɔːdns tu] 美[ɪn əˈkɔːrdns tu]  依照， 根据， 与…一致;
