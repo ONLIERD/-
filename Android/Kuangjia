@@ -1,0 +1,188 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <Layer name="defaultLayer" label="defaultLayer" visible="true" active="true" id="2">
+      <mxCell parent="0"/>
+    </Layer>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;XxxContract&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ Model: Interface&lt;br&gt;+ View: Interface&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ Presenter:Abstract class&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" id="3">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="64" y="462" width="190" height="140" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ method1(...)&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ method2(...)&lt;br&gt;&lt;/p&gt;" id="10">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="369" y="187" width="160" height="110" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ContractView&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ method1(...)&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ method2(...)&lt;br&gt;&lt;/p&gt;" id="12">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="369" y="477" width="150" height="110" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <Class label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Abstract Class&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;strong&gt;Presenter&lt;/strong&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method1(...)&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method2(...)&lt;/p&gt;" id="30">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=10;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;fontStyle=1" parent="2" vertex="1">
+        <mxGeometry x="364" y="627" width="150" height="120" as="geometry"/>
+      </mxCell>
+    </Class>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IModel&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" id="36">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="359" y="27" width="180" height="100" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="37" value="Extends" style="exitX=0.5;exitY=0;edgeStyle=none;endArrow=block;endSize=16;endFill=0;html=1;entryX=0.5;entryY=1;" parent="2" source="10" target="36" edge="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="455" y="117" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IView&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ void onCancelView()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ void onLoadView()&lt;br&gt;&lt;/p&gt;" id="38">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="354" y="327" width="180" height="110" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="39" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;" parent="2" source="12" target="38" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <Class label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;strong&gt;BasePresenter&amp;lt;V extends IView,M extends IModel&lt;/strong&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ protected mModel:M&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ protected mView:V&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ private mCompositeSubscription:CompositeSubscription&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ attachView(IView view){mView=(V)view;}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ detachView(){detachSubscription(); mView=null;}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ addSubscription(){...}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ detachSubscription(){...}&lt;/p&gt; " id="40">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=微软雅黑;html=1;keepValueHtmlFormat=1;lineheight=1.2;" parent="2" vertex="1">
+        <mxGeometry x="257" y="787" width="365" height="170" as="geometry"/>
+      </mxCell>
+    </Class>
+    <mxCell id="41" value="Extends" style="exitX=0.5;exitY=1;edgeStyle=none;endArrow=block;endSize=16;endFill=0;html=1;entryX=0.5;entryY=0;" parent="2" source="30" target="40" edge="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="449" y="787" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IPresenter&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ attachView()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ detachView()&lt;br&gt;&lt;/p&gt;" id="46">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="9" y="817" width="150" height="110" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="51" value="Inner Class" style="entryX=1;entryY=0.5;exitX=0;exitY=0.5;endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;" parent="2" source="10" target="3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="52" value="Inner Class" style="entryX=1;entryY=0.5;exitX=0;exitY=0.5;endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;" parent="2" source="12" target="3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="55" value="Inner Class" style="entryX=1;entryY=0.5;exitX=0;exitY=0.5;endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;" parent="2" source="30" target="3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;XxxModel&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ method1(...){...}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ method2(...){...}&lt;br&gt;&lt;/p&gt;" id="58">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="649" y="187" width="160" height="110" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="59" value="Implementation" style="entryX=1;entryY=0.5;exitX=0;exitY=0.5;endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" parent="2" source="58" target="10" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;XxxActivity&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method1(...){...}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method2(...){...}&lt;br&gt;&lt;/p&gt;" id="60">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="659" y="477" width="150" height="110" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="61" value="Implementation" style="entryX=1;entryY=0.5;exitX=0;exitY=0.5;endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" parent="2" source="60" target="12" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <Class label="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;strong&gt;XxxPresenter&lt;/strong&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ XxxPresenter(XxxContract.ContractView view){&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; mModel=new XxxModel();&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;mView=view;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; attach(view);}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ method1(...){...}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ method2(...){...}&lt;/p&gt;" id="62">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="654" y="612" width="270" height="150" as="geometry"/>
+      </mxCell>
+    </Class>
+    <mxCell id="63" value="Extends" style="entryX=1;entryY=0.5;exitX=0;exitY=0.5;endArrow=block;endSize=16;endFill=0;html=1;" parent="2" source="62" target="30" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="64" value="Implementation" style="entryX=1;entryY=0.5;exitX=0;exitY=0.5;endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" parent="2" source="40" target="46" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="68" value="&lt;p&gt;XxxPresenter中常用方法体:&lt;/p&gt;&lt;p&gt;{Subscrption subscription=mModel.method1()&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;.subscribeOn(.io()).unsubscribeOn(.io())&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;.observeOn(mainThread()).compose(...)&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;.map(...).subscribe(...);&lt;/p&gt;&lt;p&gt;&amp;nbsp;addSubscription(subscription);&lt;/p&gt;&lt;p&gt;}&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fontSize=12;lineheight=1.2;" parent="2" vertex="1">
+      <mxGeometry x="659" y="817" width="260" height="180" as="geometry"/>
+    </mxCell>
+    <mxCell id="69" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;XxxModel中实现的方法体:&lt;div&gt;1.向服务器请求数据:&lt;br&gt;&lt;div&gt;&lt;div&gt;{return XxxFactory.getInstance().&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;getXxxService().methodX(...);&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;2.本地数据库操作&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fontSize=10;" parent="2" vertex="1">
+      <mxGeometry x="629" y="27" width="200" height="100" as="geometry"/>
+    </mxCell>
+    <Connector label="" href="" srcport="" sinkport="" srcportip="" sinkportip="" DirectLink="" id="75">
+      <mxCell style="entryX=0.5;entryY=1;exitX=0.5;exitY=0;" parent="2" source="68" target="62" edge="1">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </Connector>
+    <Connector label="" href="" srcport="" sinkport="" srcportip="" sinkportip="" DirectLink="" id="76">
+      <mxCell style="entryX=0.5;entryY=0;exitX=0.5;exitY=1;" parent="2" source="69" target="58" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="974" y="327" as="sourcePoint"/>
+          <Array as="points">
+            <mxPoint x="729" y="175"/>
+            <mxPoint x="729" y="175"/>
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;XxxFragment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method1(...){...}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method2(...){...}&lt;br&gt;&lt;/p&gt;" id="77">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="659" y="337" width="150" height="110" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="80" value="Implementation" style="entryX=1;entryY=0.5;exitX=0;exitY=0.5;endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" parent="2" source="77" target="12" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="81" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;页面方法体中操作:&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;mPresenter.mmethod1(...);&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fontSize=10;" parent="2" vertex="1">
+      <mxGeometry x="839" y="427" width="160" height="80" as="geometry"/>
+    </mxCell>
+    <Connector label="" href="" srcport="" sinkport="" srcportip="" sinkportip="" DirectLink="" id="82">
+      <mxCell style="entryX=1;entryY=0.5;exitX=0.5;exitY=0;" parent="2" source="81" target="77" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="919" y="392"/>
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="" href="" srcport="" sinkport="" srcportip="" sinkportip="" DirectLink="" id="83">
+      <mxCell style="exitX=0.5;exitY=1;entryX=1;entryY=0.5;" parent="2" source="81" target="60" edge="1">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </Connector>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;ApiFactory(该工厂无效)&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;private volatile static ApiFactory sInstance;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;private Retrofit mRetrofit;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;private final OkHttpClient client;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ private ApiFactory(){...}&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ public static ApiFactory getInstance(){单例模式}&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ public ApiService getApiService(){...}&lt;/p&gt;" id="84">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="1169" y="503" width="300" height="163" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="85" value="&lt;pre&gt;ApiFactory的构造方法举例:&lt;/pre&gt;&lt;pre&gt;{HttpLoggingInterceptor loggingInterceptor = &lt;span&gt;new &lt;/span&gt;HttpLoggingInterceptor()&lt;span&gt;;&lt;br&gt;&lt;/span&gt;loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.&lt;span&gt;BODY&lt;/span&gt;)&lt;span&gt;;&lt;br&gt;&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;int &lt;/span&gt;size = &lt;span&gt;1024 &lt;/span&gt;* &lt;span&gt;1024 &lt;/span&gt;* &lt;span&gt;10&lt;/span&gt;&lt;span&gt;;&lt;br&gt;&lt;/span&gt;File cacheFile = &lt;span&gt;new &lt;/span&gt;File(BaseApplication.&lt;span&gt;getInstance&lt;/span&gt;().getCacheDir()&lt;span&gt;, &lt;/span&gt;&lt;span&gt;&quot;okHttp&quot;&lt;/span&gt;)&lt;span&gt;;&lt;br&gt;&lt;/span&gt;Cache cache = &lt;span&gt;new &lt;/span&gt;Cache(cacheFile&lt;span&gt;, &lt;/span&gt;size)&lt;span&gt;;&lt;br&gt;&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;client &lt;/span&gt;= &lt;span&gt;new &lt;/span&gt;OkHttpClient.Builder()&lt;br&gt;        .connectTimeout(&lt;span&gt;12&lt;/span&gt;&lt;span&gt;, &lt;/span&gt;TimeUnit.&lt;span&gt;SECONDS&lt;/span&gt;)&lt;br&gt;        .writeTimeout(&lt;span&gt;12&lt;/span&gt;&lt;span&gt;, &lt;/span&gt;TimeUnit.&lt;span&gt;SECONDS&lt;/span&gt;)&lt;span&gt;&lt;br&gt;&lt;/span&gt;        .addInterceptor(&lt;span&gt;new &lt;/span&gt;SignInterceptor())&lt;br&gt;        .addInterceptor(loggingInterceptor)&lt;br&gt;        .cache(cache)&lt;br&gt;        .build()&lt;span&gt;;&lt;br&gt;&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;mRetrofit &lt;/span&gt;= &lt;span&gt;new &lt;/span&gt;Retrofit.Builder()&lt;br&gt;        .baseUrl(AppConfig.&lt;span&gt;BASE_URL&lt;/span&gt;) //设置retrofit请求的基础url,不同工厂设置不同&lt;br&gt;        .client(&lt;span&gt;client&lt;/span&gt;)&lt;br&gt;        .addConverterFactory(ScalarsConverterFactory.&lt;span&gt;create&lt;/span&gt;())&lt;br&gt;        .addConverterFactory(GsonConverterFactory.&lt;span&gt;create&lt;/span&gt;())&lt;br&gt;        .addCallAdapterFactory(RxJavaCallAdapterFactory.&lt;span&gt;create&lt;/span&gt;())&lt;br&gt;        .build()&lt;span&gt;;&lt;/span&gt;}&lt;/pre&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;lineheight=1.2;" parent="2" vertex="1">
+      <mxGeometry x="1029" y="48" width="580" height="400" as="geometry"/>
+    </mxCell>
+    <Connector label="" href="" srcport="" sinkport="" srcportip="" sinkportip="" DirectLink="" id="87">
+      <mxCell style="entryX=0.5;entryY=0;exitX=0.5;exitY=1;" parent="2" source="85" target="84" edge="1">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </Connector>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;ApiService(只是一个用于抽出方法的接口,与retrofit无关)&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method1()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method2()&lt;/p&gt;" id="88">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="1149" y="728" width="335" height="101" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;ApiServiceImpl(在其方法体内)&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method1(){&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&amp;nbsp; 业务逻辑;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&amp;nbsp; return XxxApiFactory.getInstance.getApiService.method1()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method2(){..}&lt;/p&gt;" id="90">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="1149" y="906" width="335" height="130" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="91" value="Implementation" style="exitX=0.5;exitY=0;entryX=0.5;entryY=1;edgeStyle=none;endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" parent="2" source="90" target="88" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;BaseApiFactory&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;private final String mBaseUrl&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;private final Class&amp;lt;T&amp;gt; mServiceType&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;private Retrofit mRetrofit;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;protected final OkHttpClient client;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;private static final int MAX_NETWORK_THRED //线程数&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;private static final &lt;/span&gt;&lt;span&gt;EventListener &lt;/span&gt;&lt;span&gt;sHttpPerformanceMonitor //事件监听&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;private static &lt;/span&gt;&lt;span&gt;CallAdapter.Factory &lt;/span&gt;&lt;span&gt;sRxJavaCallAdapterFactory&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+&amp;nbsp;&lt;span&gt;public &lt;/span&gt;&lt;span&gt;T &lt;/span&gt;&lt;span&gt;getApiService&lt;/span&gt;&lt;span&gt;() {&lt;/span&gt;&lt;span&gt;return &lt;/span&gt;&lt;span&gt;mRetrofit&lt;/span&gt;&lt;span&gt;.create(&lt;/span&gt;&lt;span&gt;mServiceType&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;span&gt;;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; //设置mBaseUrl和mServiceType,&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; //其他参见ApiFactory的构造方法,多为OkHttpClient设置了Dispatcher&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;+ protected BaseApiFactory(String baseUrl,Class&amp;lt;T&amp;gt; service)&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" id="92">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="1749" y="379" width="390" height="219" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;XxxApiFactory&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;private volatile static XxxApiFactory sInstance;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;&lt;/span&gt;&lt;span&gt;protected &lt;/span&gt;&lt;span&gt;XxxApiFactory&lt;/span&gt;&lt;span&gt;(){super(XxxContants.XXX_BASE_URL,XxxApiService.class)};&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;+ public static XxxApiFactory getInstance(){&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if &lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;sInstance &lt;/span&gt;&lt;span&gt;== &lt;/span&gt;&lt;span&gt;null&lt;/span&gt;&lt;span&gt;) {&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;synchronized &lt;/span&gt;&lt;span&gt;(McpApiFactory.&lt;/span&gt;&lt;span&gt;class&lt;/span&gt;&lt;span&gt;) {&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if &lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;sInstance &lt;/span&gt;&lt;span&gt;== &lt;/span&gt;&lt;span&gt;null&lt;/span&gt;&lt;span&gt;) {&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; sInstance &lt;/span&gt;&lt;span&gt;= &lt;/span&gt;&lt;span&gt;new &lt;/span&gt;&lt;span&gt;XxxApiFactory()&lt;/span&gt;&lt;span&gt;;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;}&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;}&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return &lt;/span&gt;&lt;span&gt;sInstance&lt;/span&gt;&lt;span&gt;;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;}&lt;/span&gt;&lt;/p&gt;" id="93">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="1676" y="659" width="535" height="232" as="geometry"/>
+      </mxCell>
+    </Interface>
+    <mxCell id="95" value="Implementation" style="exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" parent="2" source="93" target="92" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <Interface label="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;XxxApiService&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;b&gt;Xxx工厂对应的API接口&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ @Get(.....)&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp;method1(@... ...)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp;@Post(...)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ method2(@... ...)&lt;br&gt;&lt;/p&gt;" id="97">
+      <mxCell style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;keepValueHtmlFormat=1;" parent="2" vertex="1">
+        <mxGeometry x="1783" y="939" width="260" height="149" as="geometry"/>
+      </mxCell>
+    </Interface>
+  </root>
+</mxGraphModel>
