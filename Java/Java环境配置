@@ -1,6 +1,0 @@
-CLASSPATH--.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
-JAVA_HOME--jdk路径
-Path--%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
-
-android--D:\Android\SDK\platform-tools;D:\Android\SDK\tools
-Path--%android%;

@@ -1,0 +1,22 @@
+# Java环境配置 #
+1. 新建系统变量JAVA_HOME,变量值为:
+
+		jdk安装路径
+
+2. 新建系统变量CLASSPATH,变量值为:
+
+		.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
+		其中.表示当前路径
+
+3. 修改系统变量Path,添加值:
+
+		%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+
+# Android的adb环境变量配置 #
+1. 新建系统变量android,变量值为:
+
+		D:\Android\SDK\platform-tools;D:\Android\SDK\tools
+
+2. 修改系统变量Path,添加:
+ 
+		%android%;
