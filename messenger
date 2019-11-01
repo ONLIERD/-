@@ -1,0 +1,162 @@
+package com.example.mesengerserver;
+
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
+import android.os.IBinder;
+import android.os.Messenger;
+import android.util.Log;
+
+import androidx.annotation.NonNull;
+
+/**
+ * 服务端信使
+ *
+ * @author d00509897
+ * @since 2019-07-27
+ */
+final class MessengerServer {
+    /**
+     * 日志标签
+     */
+    private static final String TAG = MessengerServer.class.getSimpleName();
+
+    /**
+     * 服务端信使
+     */
+    private Messenger messengerServer;
+
+    /**
+     * 获取服务端信使对象
+     *
+     * @return 服务端信使对象
+     */
+    public Messenger getMessengerServer() {
+        return messengerServer;
+    }
+
+    /**
+     * 绑定AIDL信使服务，获得服务端的信使（发送消息给服务端）
+     */
+    public MessengerServer(@NonNull final Context context) {
+        final ServiceConnection serviceConn = new ServiceConnection() {
+            @Override
+            public void onServiceConnected(ComponentName name, IBinder service) {
+                // 根据服务端传来的 IBinder 对象创建一个 Messenger
+                messengerServer = new Messenger(service);
+                Log.e(TAG, "连接成功，创建一个信使");
+            }
+
+            @Override
+            public void onServiceDisconnected(ComponentName name) {
+                Log.e(TAG, "连接失败");
+            }
+
+            @Override
+            public void onBindingDied(ComponentName name) {
+                bindMessengerServer(context, this);
+            }
+        };
+
+        bindMessengerServer(context, serviceConn);
+    }
+
+    /**
+     * 绑定服务端信使对象
+     *
+     * @param context     上下文
+     * @param serviceConn 连接对象
+     */
+    private void bindMessengerServer(@NonNull Context context, ServiceConnection serviceConn) {
+        Intent intent = new Intent();
+        intent.setClassName("com.example.messengerclient", "com.example.messengerclient.MessengerService");
+        boolean bindResult = context.bindService(intent, serviceConn, Context.BIND_AUTO_CREATE);
+        if (!bindResult) {
+            Log.e(TAG, "绑定服务端信使对象结果为false");
+        }
+    }
+}
+
+---------------------------------
+package com.example.mesengerserver;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.os.Message;
+import android.os.Messenger;
+import android.os.RemoteException;
+import android.util.Log;
+
+public class MainActivity extends AppCompatActivity {
+    private static final String TAG = MainActivity.class.getSimpleName();
+    private MessengerServer messengerServer;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        messengerServer=new MessengerServer(this.getApplicationContext());
+        Log.e(TAG, "messengerServer地址"+messengerServer.getMessengerServer());
+        sendRequest(messengerServer.getMessengerServer(),1,new Student(20,"wangjie"));
+
+    }
+    /**
+     * 使用服务端的信使给服务端发送请求消息，并把客户端的信使带给服务端，用于接收来自服务端的异步响应消息
+     * @param msgWhat
+     * @param
+     */
+    public static void sendRequest(Messenger messengerServer, int msgWhat,Student student) {
+        if (messengerServer == null) {
+            Log.e(TAG, "发送消息时获取信使服务失败");
+            return;
+        }
+        Message msgRequest = Message.obtain();
+        msgRequest.what = msgWhat;
+
+//        // 将客户端的信使传递给服务端
+//        msgRequest.replyTo = messengerClient;
+//
+        Bundle studentBundle = new Bundle();
+        studentBundle.putParcelable(Student.class.getName(), student);
+        msgRequest.setData(studentBundle);
+
+        try {
+            messengerServer.send(msgRequest);
+            Log.e(TAG,"发送消息了");
+        } catch (RemoteException e) {
+            Log.e(TAG,"发送消息失败");
+        }
+    }
+}
+----------------
+package com.example.messengerclient;
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
+import android.os.Messenger;
+import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+
+public class MessengerService extends Service {
+    @Nullable
+    @Override
+    public IBinder onBind(Intent intent) {
+        return mMessenger.getBinder();
+    }
+
+    private Messenger mMessenger = new Messenger(new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            Bundle getData = msg.getData();
+            Toast.makeText(getApplicationContext(),getData+"" , Toast.LENGTH_SHORT).show();
+            super.handleMessage(msg);
+        }
+
+    });
+}
