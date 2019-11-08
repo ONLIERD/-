@@ -1,0 +1,49 @@
+JSONObject
+1.赋值：	JSONObject  put(key,value)    
+			1.key为null，抛出JSONException
+			2.key不为null，value为null，删除对应key的记录
+			3.value可为int  long double object boolean string
+
+		JSONObject  putOpt(key,value) 
+			1.key和value不能存在null值，否则返回原JSONObject
+			2.本质还是调用 put(key,value)方法
+
+		JSONObject accumulate(String key,Object newValue)
+			1.根据key找到对应的value，若value不是JSONArray，将value和newValue组合成JSONArray更新键值对；若value是JSONArray，则在其数组末尾添加newValue
+			2.key为null则抛出JSONException异常
+			3.根据key找到对应的value若为null则根据key和newValue创建一个键值对即put(key,newValue)
+		
+		JSONObject append(String key,Object newValue)
+			1.@hide注解，无法调用
+			2.根据key找到对应的value，若value不是JSONArray，抛出JSONException；若value是JSONArray，则在其数组末尾添加newValue；若value为null，新建JSONArray赋值为newValue更新键值对
+
+2.取值：	Object  get(String key) 
+			1.对应value为null，则抛出异常JSONException
+
+		Object  opt(String key) 
+			1.可返回null值
+
+		Xxx  getXxx(String key) /  JSONObject getJSONObject(String key) / JSONArray getJSONArray(String key)
+			1.返回值为null，则抛出JSONException
+			2.返回值不能转换为对应Xxx类型的值，抛出JSONException提示转化失败
+		
+		Xxx  optXxx(String key,Xxx value)
+			1.返回值为null，则取默认值value
+
+		Xxx  optXxx(String key)
+			1.本质调用optXxx(String key,Xxx value)，其中int  long double boolean string默认值分别为0 0L  0.0d/0.0 false “”
+
+		 JSONObject getJSONObject(String key) / JSONArray getJSONArray(String key)
+			1.本质调用opt(String key)，默认值为null
+
+3.构造方法：	JSONObject()
+		JSONObject(String)	本质是调用JSONObject(new JSONTokener(String)) 
+		JSONObject(Map)
+		JSONObject(JSONTokener)
+		JSONObject(JSONObject copyFrom, String[] keys)	从已有的JSONObject中取出keys中对应的value，依据keys和取出的values重新生成一个JOSNObject
+
+4.检查：	String checkName(String key)  检查key是否为空，为空则抛出JSONException，不为null返回其值
+		boolean isNull(String key)  	检查key对应value是否为null
+		boolean has(String key)		检查当前JSON对象是否又key对应的键值对，该value可以为null
+
+5.删除：	Object remove(String key)  删除对应键值对	
