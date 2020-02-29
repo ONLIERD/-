@@ -82,3 +82,4 @@ public class MyHostApduService extends HostApduService {
         </service>
         
         https://blog.csdn.net/explorer_day/article/details/72379561
+isCurDefaultPayService
