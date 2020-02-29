@@ -1,0 +1,84 @@
+<!--
+*android:description属性，包含一个用户友好描述适，和在UI显示description属性。
+*android:category 属性设置为显示类的AID组所属，如通过CATEGORY_PAYMENT或CATEGORY_OTHER定义的字符串常量。
+*每个<aid-group>必须包含一个或多个<aid-filter>标签，其中每个都包含一个单一的AID，AID必须以十六进制格式指定，并包含偶数个字符。
+-->
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/servicedesc"
+    android:requireDeviceUnlock="false">
+    <aid-group android:description="@string/aiddescription"
+        android:category="other">
+        <aid-filter android:name="F0010203040506"/>
+        <aid-filter android:name="F0394148148100"/>
+    </aid-group>
+</host-apdu-service>
+
+package com.example.myapplication;
+
+import android.content.ComponentName;
+import android.content.Context;
+import android.nfc.NfcAdapter;
+import android.nfc.cardemulation.CardEmulation;
+import android.nfc.cardemulation.HostApduService;
+import android.os.Build;
+import android.os.Bundle;
+
+import androidx.annotation.RequiresApi;
+
+@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+public class MyHostApduService extends HostApduService {
+    /**
+     * processCommandApdu（）被调用
+     * 当一个NFC读卡器发送一个应用协议数据单元（APDU）到你的服务里。
+     * APDU是在ISO / IEC 7816-4规格中定义。APDU是应用程序级的数据包被用来NFC读卡器与你的HCE服务交换。
+     * 应用层协议时半双工：在NFC读卡器将发送给您一个APDU命令，它会等待你的发送一个响应APDU。
+     * @param commandApdu
+     * @param extras
+     * @return
+     */
+    /**
+     * 应用协议数据单元（APDU）：
+     *  APDU是在ISO / IEC 7816-4规格中定义。APDU是应用程序级的数据包被用来NFC读卡器与你的HCE服务交换。
+     *  当收到来自远程设备的命令APDU时将调用此方法，通过返回字节数组直接提供响应APDU
+     * 注意：
+     *  必须尽快发送响应APDU，因为用户可能会将其设备放在NFC读卡器上
+     *  该方法会在主线程执行，因此需要避免阻塞，必要时可返回null，在其他线程用方法sendResponseApdu(byte[])发送响应
+     * 调用此方法时：
+     *  如果在其meta-data entry中有多个服务已注册为同一个Aid，
+     *  仅当用户明确选择了您的服务时，该方法才会被调用，可以将其默认或仅用于下一次点击。
+     */
+    @Override
+    public byte[] processCommandApdu(byte[] commandApdu, Bundle extras) {
+        return new byte[0];
+    }
+
+    /**
+     *在两种可能的情况下将调用此方法：
+     * NFC链接已停用或丢失
+     * 已选择其他AID，aid被解析为其他AID服务组件
+     * @param原因{@link #DEACTIVATION_LINK_LOSS}或{@link #DEACTIVATION_DESELECTED}
+     */
+    @Override
+    public void onDeactivated(int reason) {
+
+    }
+
+    public void isDefault(Context context){
+        NfcAdapter adapter = NfcAdapter.getDefaultAdapter(context);
+        //isDefaultServiceForCategory方法需要NFC权限
+        ComponentName com = new ComponentName(context.getPackageName(), MyHostApduService.class.getName());
+        CardEmulation.getInstance(adapter).isDefaultServiceForCategory(com, CardEmulation.CATEGORY_OTHER);
+    }
+}
+
+        <service android:name=".MyHostApduService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+            </intent-filter>
+            <meta-data android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/apduservice"/>
+        </service>
+        
+        https://blog.csdn.net/explorer_day/article/details/72379561
